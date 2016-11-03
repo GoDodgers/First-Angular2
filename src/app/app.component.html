@@ -1,5 +1,13 @@
 <h1>
-	{{title}}
+	{{title}} || {{stringInterpolation}} || {{numberInterpolation}}
 	<app-first></app-first>
 	<app-second></app-second>
+	<h1> Property Binding </h1>
+	<input type="text" value="placeholder"> <strong>OR</strong>
+	<input type="text" value="{{stringInterpolation}}"> <strong>OR</strong>
+	<input type="text" [value]="propertyBinding"> <!-- property binding needs expression -->
+	<p [ngClass]="{redBorder:true}">Is this styled???</p> <!-- key = name of the class --> <strong>OR</strong>
+	<p [ngClass]="{redBorder:false}">Is this styled???</p> <strong>OR</strong>
+	<p [ngClass]="{blueBorder:onTest()}">Is this styled???</p> <strong>OR</strong>
+	<p [ngStyle]="{color: 'green'}"> Is this styled??? </p>
 </h1>

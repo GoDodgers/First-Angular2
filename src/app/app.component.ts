@@ -25,6 +25,7 @@ import { Component } from '@angular/core';
 	/*
 
 	like templates inline styles can be added using the styles property
+	NOTE: uses view Encapsulation, ie: styles applied here will only refelect in this component, can be disabled
 	styles: [`
 		h1 {
 			color: red;
@@ -36,4 +37,10 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
 	title = 'app works!';
+	stringInterpolation = "this is string interpolation!";
+	numberInterpolation = "this is number interpolation!";
+	propertyBinding = "this is property binding";
+	onTest() {
+		return true;
+	}
 }
