@@ -8,6 +8,7 @@ import { FirstComponent } from './first-component/first-component.component';
 import { SecondComponent } from './first-component/second.component';
 import { PropertyBindingComponent } from './property-binding.component';
 import { EventBindingComponent } from './event-binding.component';
+import { TwoWayBindingComponent } from './two-way-binding.component';
 
 @NgModule({
 	//declares which directives/pipes we use in our application
@@ -19,6 +20,7 @@ import { EventBindingComponent } from './event-binding.component';
 		SecondComponent,
 		PropertyBindingComponent,
 		EventBindingComponent,
+		TwoWayBindingComponent,
 	],
 	//shows angular2 which other modules do we use in our application
 	imports: [
