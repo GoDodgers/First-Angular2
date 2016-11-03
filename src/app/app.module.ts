@@ -4,13 +4,17 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { FirstComponent } from './first-component/first-component.component';
+import { SecondComponent } from './first-component/second.component';
 
 @NgModule({
 	//declares which directives/pipes we use in our application
 	//directives are like instructions that tell angular 2 what to do
 	declarations: [
 		//componets are such instructions
-		AppComponent
+		AppComponent,
+		FirstComponent,
+		SecondComponent,
 	],
 	//shows angular2 which other modules do we use in our application
 	imports: [
