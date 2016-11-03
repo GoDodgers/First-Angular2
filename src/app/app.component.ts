@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { PropertyBindingComponent } from './property-binding.component';
+import { EventBindingComponent } from './event-binding.component';
 
 @Component({
 	//what allows us to use this component throught the application
