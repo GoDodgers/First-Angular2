@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { PropertyBindingComponent } from './property-binding.component';
 import { EventBindingComponent } from './event-binding.component';
+import { CustomEventComponent } from './custom-event.component';
 import { TwoWayBindingComponent } from './two-way-binding.component';
 
 
@@ -44,7 +45,13 @@ export class AppComponent {
 	stringInterpolation = "this is string interpolation!";
 	numberInterpolation = "this is number interpolation!";
 	propertyBinding = "this is property binding";
+	
 	onTest() {
 		return true;
 	}
+
+	onCustomClick(value: string) {
+		alert(value);
+	}
+
 }
